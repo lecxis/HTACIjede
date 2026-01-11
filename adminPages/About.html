@@ -117,6 +117,18 @@
     </button>
 			-->	
 			
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+					
+			<!-- Button to trigger the modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionalFormModal">
+  Add Optional Details
+</button>
+
+<<<<<<< HEAD
+=======
 			<!-- Area to display additional details -->
 <div class="mt-4" id="savedDetailsDisplay">
   <h5>Additiional Content:</h5>
@@ -133,6 +145,9 @@
   Add Optional Details
 </button>
 -->
+>>>>>>> 61377e4906a4efa87558ec3acffe2f500c576534
+=======
+>>>>>>> main
 <!-- Bootstrap Modal Structure -->
 <div class="modal fade" id="addOptionalFormModal" tabindex="-1" aria-labelledby="addOptionalFormModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -159,12 +174,27 @@
 </div>
 
 <!-- Area to display saved details -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+<div class="mt-4" id="savedDetailsDisplay">
+  <h5>Saved Optional Details:</h5>
+  <ul id="detailsList">
+    <!-- Details will be added here by JavaScript -->
+  </ul>
+</div>
+<<<<<<< HEAD
+=======
 <!--<div class="mt-4" id="savedDetailsDisplay">
   <h5>Saved Optional Details:</h5>
   <ul id="detailsList">
     <!-- Details will be added here by JavaScript -->
  <!-- </ul>
 </div> -->
+>>>>>>> 61377e4906a4efa87558ec3acffe2f500c576534
+=======
+>>>>>>> main
 
 
 
@@ -231,6 +261,12 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 			 <!-- Bootstrap JavaScript (Bundle includes Popper) -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	document.getElementById('optionalDetailsForm').addEventListener('submit', function(event) {
+=======
      <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
 	<script>
 	  let count=0;
@@ -307,12 +343,29 @@
   
   
 	/**document.getElementById('optionalDetailsForm').addEventListener('submit', function(event) {
+>>>>>>> 61377e4906a4efa87558ec3acffe2f500c576534
+=======
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	document.getElementById('optionalDetailsForm').addEventListener('submit', function(event) {
+>>>>>>> main
   event.preventDefault(); // Prevent default form submission
 
   const input1 = document.getElementById('optionalInput1').value;
   const input2 = document.getElementById('optionalInput2').value;
 
   // Create list item for displaying details
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+  const listItem = document.createElement('li');
+  listItem.textContent = `Field 1: ${input1}, Field 2: ${input2}`;
+
+  // Append to the display area
+  document.getElementById('detailsList').appendChild(listItem);
+<<<<<<< HEAD
+=======
   //const listItem = document.createElement('li');
   //listItem.textContent = `Field 1: ${input1}, Field 2: ${input2}`;
       const inputField = document.createElement("input");
@@ -333,6 +386,9 @@
   // Append to the display area
   document.getElementById('detailsList').appendChild(theDiv)
   document.getElementById('detailsList').appendChild(textareaElement);
+>>>>>>> 61377e4906a4efa87558ec3acffe2f500c576534
+=======
+>>>>>>> main
 
   // Clear form fields
   document.getElementById('optionalInput1').value = '';
@@ -342,7 +398,15 @@
   const modalElement = document.getElementById('addOptionalFormModal');
   const modal = bootstrap.Modal.getInstance(modalElement);
   modal.hide();
+<<<<<<< HEAD
+<<<<<<< HEAD
+});
+=======
 });**/
+>>>>>>> 61377e4906a4efa87558ec3acffe2f500c576534
+=======
+});
+>>>>>>> main
 	</script>
 
     </body>
